@@ -22,7 +22,10 @@ namespace ValueAndReference
             array2[0] = 0;
             
             /* The value index 0 of either array will be the same. This is a reference type.
-            array1 and array2 is making a reference of the array that is stored in the heap. */
+            array1 and array2 is making a reference of the array that is stored in the heap.
+            Arrays are reference types. So here, both array1 and array2 are referencing the
+            same object in the memory. Any changes applied via array2 (note line 3), will
+            be visible via array1 reference. */
             System.Console.WriteLine(string.Format("array1: {0}, array2: {1}", array1[0], array2[0]));
         }
     }
